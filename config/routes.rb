@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
  resources :selfies
 
- root "selfies#index"
+ root "selfies#new"
 end
