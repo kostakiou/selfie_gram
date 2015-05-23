@@ -12,7 +12,7 @@ def create
 	@selfie = Selfie.new(selfie_params)
 
 	if @selfie.save
-		redirect_to @selfie, notice:"Succesfully message submitted"
+		redirect_to root_path, notice:"Succesfully message submitted"
 	else
 		render 'new'
 	end
